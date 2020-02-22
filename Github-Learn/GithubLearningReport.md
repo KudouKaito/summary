@@ -1,7 +1,7 @@
 # 第N周学习报告  
 `@Author 陆洪业`  
 `@Date 20200221`  
-[为什么要学git](#1) | [git的下载与安装](#2) | [git的基本使用](#3) .....
+[为什么要学git](#1) | [git的下载与安装](#2) | [git的基本使用](#3) | [版本操作](#4) | [撤销修改](#5)
 
 ```
 Git是目前世界上最先进的分布式版本控制系统，
@@ -20,8 +20,7 @@ $ git config --global user.email "email@example.com"
 ```
 
 # <a id='3'>git的基本使用</a>
-我自己划分的git基本操作有：init、add、status、commit、diff和push
-
+我自己划分的git基本操作有：init、add、status、commit和diff
 一张图了解git的运作
 ---
 ![relationship](git_relationship.jpg)
@@ -59,6 +58,9 @@ $ git diff 文件 //查看暂存区和工作区的差别
 $ git diff HEAD -- 文件 //查看HEAD版本(当前版本库)和工作区的差别
 ```
 
+# <a id='4'>版本操作</a>
+版本操作似乎对工作区无操作
+
 查看commit版本记录
 ---
 ```
@@ -85,7 +87,10 @@ HEAD表示当前版本,
 $ git reflog
 ```
 
-撤销修改
+
+# <a id='5'>撤销修改</a>
+
+还未add
 ---
 使用checkout可以丢弃工作区中的修改
 ```
@@ -102,6 +107,12 @@ $ git status
 
 修改尚未加入提交（使用 "git add" 和/或 "git commit -a"）
 ```
+经观察推断git checkout -- file 和 git restore file是一样的
+
+
+已经add
+---
+
 我add之后再修改工作区,查看status
 ```
 位于分支 master
@@ -114,21 +125,27 @@ $ git status
   （使用 "git restore <文件>..." 丢弃工作区的改动）
 	修改：     readme.md
 ```
-经过一番折腾,发现了这堆东西  
+撤销修改总结
+---
+当我们对我们的修改不满的时候,我们可以进行相应的操作撤销恢复
+
 对工作区的操作
 ```
 $ git restore file 
 $ git checkout -- file 
 // 俩指令一样,都是放弃工作区中的修改,默认从暂存区恢复到工作区,如果暂存区没有内容,则从本地仓库中恢复到工作区  
-$ git checkout HEAD -- file // 放弃工作区和暂存区中的修改(add没add都可以),恢复HEAD的版本  
 ```
 对暂存区的修改
 ```
-$ git restore --staged file //取消暂存
-$ git checkout HEAD -- file // 恢复HEAD的版本,且取消暂存  
+$ git reset HEAD -- file // 取消暂存,--要不要都一样,HEAD可缺省,意思是将HEAD的修改拿回暂存区,不改变版本号
+$ git restore --staged file // 取消暂存
+// 同样俩指令一样
+$ git reset commit_id // 改变版本号且拿回暂存区,取消暂存 
 ```
-
-
+对暂存区和工作区都有作用的修改
+```
+$ git checkout HEAD -- file // 放弃工作区和暂存区中的修改(add没add都可以),恢复HEAD的版本,好像--要不要都可以,不过不要的话会有提示,比如"从 4f7d0d7 更新了 1 个路径"
+```
 
 
 
