@@ -22,7 +22,7 @@ $ git config --global user.email "email@example.com"
 # <a id='3'>git的基本使用</a>
 我自己划分的git基本操作有：init、add、status、commit和diff
 ## 一张图了解git的运作
-![relationship](git_relationship.jpg)
+![relationship](image/git_relationship.jpg)
 
 当前文件夹为工作区(Workspace),./git/为本地仓库(Repository),./.git/index/为暂存区(Index,也称Stage),远程仓库(Remote)在服务器如Github上  
 
