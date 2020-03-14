@@ -13,6 +13,7 @@ emm, 之后... 主要还是搞安卓吧, Python有额外的空余时间再学习
 这是一个窗口增强管理器, 很久之前就看到它了, 可是不一会就名字给忘了, 就记得叫Power啥还是Super啥, 谁能想到叫PowerToys(玩具?为啥一个窗口增强管理器叫玩具?迷)  
 这是一个MicroSoft开发的一个窗口增强管理器, 原本Windows的窗口只能左右分屏, 而PowerToys可以让窗口按照你想要的方式分布, 一般是让他们平铺分布.  
 <iframe id=sbrxp src="//player.bilibili.com/player.html?aid=77283038&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 430px; max-width: 100%"> </iframe>   
+
 感觉不错  
 
 # <a id='3'>编译型语言和解释性语言</a>  
