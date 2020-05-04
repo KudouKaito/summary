@@ -27,4 +27,7 @@
 ![](http://latex.codecogs.com/gif.latex?{\\pi}r^2)  
 ![](http://latex.codecogs.com/gif.latex?\\lim\\limits_{x\\rightarrow\frac{\\pi}{2}}{\\tan{x}})  
 <img src="http://latex.codecogs.com/gif.latex?\\frac{\\partial J}{\\partial \\theta_k^{(j)}}=\sum_{i:r(i,j)=1}{\big((\theta^{(j)})^Tx^{(i)}-y^{(i,j)}\big)x_k^{(i)}}+\lambda \xtheta_k^{(j)}" />  
+
+好像没效果...  
+还是用mathjax浏览器插件吧
 <kbd>End<kbd>
