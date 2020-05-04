@@ -9,3 +9,4 @@
 - [第六周学习报告](6thWeekSummary/6stWeekSummary.md)
 ### 两周一报告  
 - [第一次](1stSummary/1stSummary.md)
+- [第二次](2ndSummary/1ndSummary.md)
