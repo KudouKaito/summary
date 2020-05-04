@@ -21,7 +21,10 @@
 # <a id='2'>Latex</a>  
 无意间发现有些Markdown可以支持Latex, 不过原生版的似乎不行, github上就显示不了.  
 在github显示会变成这样$\lim\limits_{x\rightarrow\frac{\pi}{2}}{\tan{x}}$  
-可以使用`![](http://latex.codecogs.com/gif.latex?{\\pi}r^2)`  
+可以使用  
+`![](http://latex.codecogs.com/gif.latex?{\\pi}r^2)`  
+`<img src="http://latex.codecogs.com/gif.latex?\\frac{\\partial J}{\\partial \\theta_k^{(j)}}=\sum_{i:r(i,j)=1}{\big((\theta^{(j)})^Tx^{(i)}-y^{(i,j)}\big)x_k^{(i)}}+\lambda \xtheta_k^{(j)}" />`  
 ![](http://latex.codecogs.com/gif.latex?{\\pi}r^2)  
 ![](http://latex.codecogs.com/gif.latex?\\lim\\limits_{x\\rightarrow\frac{\\pi}{2}}{\\tan{x}})  
-<kbd>Ctrl<kbd>
+<img src="http://latex.codecogs.com/gif.latex?\\frac{\\partial J}{\\partial \\theta_k^{(j)}}=\sum_{i:r(i,j)=1}{\big((\theta^{(j)})^Tx^{(i)}-y^{(i,j)}\big)x_k^{(i)}}+\lambda \xtheta_k^{(j)}" />  
+<kbd>End<kbd>
