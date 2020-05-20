@@ -26,8 +26,12 @@ func(araay);//调用
 func(**p,m,n)
 {
     printf("%d",*(*p+i)+j);
-    printf("%d",**(p+i+j*m));
+    printf("%d",*(*p+i*m+j));
     
 }
+是*(*p+i*m+j)而不是**(p+i*m+j),  
+因为array_2D[0][0]是数组元素此时加1是元素加1;  
+&array_2D[0][0]等价与array_2D[0],为(int *)类型,基类型是int,长度为int类型的长度,此时加1就是下一个元素;  
+&&array_2D[0][0]等价与array_2D,为类型为(int **),行指针,基类型为(int *),基类型长度为数组行长度,此时加1就是下一行  
 
 ```
